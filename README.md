@@ -1,6 +1,7 @@
 # comparing-spatial-resolutions
 Placeholder repo for hacking at "How should we compare or scale between rasters of different resolutions/grids?"
 
+*Also, maybe this is the first of a continuing series of mini-hackathons where we set aside a block of time help each other out.*
 
 ## How should we compare or scale between rasters of different resolutions/grids?
 
