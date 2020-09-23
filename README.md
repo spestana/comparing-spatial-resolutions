@@ -14,6 +14,13 @@ Some tools of interest that might help us out:
 * [geopandas](https://geopandas.org/)
 * [gdal](https://gdal.org/)
 
+Some shapefile-defined zonal stats notebooks I have:
+* For ASTER imagery: 
+  - [aster_utils.py](https://github.com/spestana/goes-cues/blob/master/aster_utils.py), Functions for working with ASTER TIR imagery(from the [AST_L1T product](https://lpdaac.usgs.gov/products/ast_l1tv003/)): converting DN to radiance, radiance to brightness temperature, and computing zonal statistics given a shapefile.
+  - [zonal-statistics-aster.ipynb](https://nbviewer.jupyter.org/github/spestana/goes-cues/blob/master/zonal-statistics-aster.ipynb), Example notebook to read in an AST_L1T geotiff, shapefile, and compute zonal statistics.
+* For ECOSTRESS imagery: 
+  - [eco-clearlake.ipynb](https://nbviewer.jupyter.org/github/spestana/whw2020_firewater/blob/master/ECOSTRESS/eco-clearlake.ipynb), Clip ECOSTRESS TIR imagery with a shapefile to look at lake surface temperature.
+
 ## Agenda for a mini-hackathon:
 
 1. Introduce the problems we're trying to solve. What do these problems share in common, what can we work on together?
