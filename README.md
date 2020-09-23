@@ -29,3 +29,12 @@ Some shapefile-defined zonal stats notebooks I have:
 3. What tools look like they can help us?
 4. Try them out!
 5. Note what worked and what didn't. Plan for next steps.
+
+
+## My notes:
+
+- use geojson instead of shapefiles
+- make sure my goes-ortho geotiffs have the correct "PixelIsArea" or "PixelIsPoint" metadata flag (are my coordinates referencing the upper-left of the pixel or the center of the pixel?)
+- try doing a bilinear interpolation with my ASTER imagery to get it on the NED DEM grid (30m or 90m?) so that all my datasets are on the same grid and resolution
+  - gdal_rasterize (-tap, -ts, -tr, -te options)
+  - gdal_polygonize
