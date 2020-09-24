@@ -36,5 +36,11 @@ Some shapefile-defined zonal stats notebooks I have:
 - use geojson instead of shapefiles
 - make sure my goes-ortho geotiffs have the correct "PixelIsArea" or "PixelIsPoint" metadata flag (are my coordinates referencing the upper-left of the pixel or the center of the pixel?)
 - try doing a bilinear interpolation with my ASTER imagery to get it on the NED DEM grid (30m or 90m?) so that all my datasets are on the same grid and resolution
-  - gdal_rasterize (-tap, -ts, -tr, -te options)
-  - gdal_polygonize
+  - [gdal_rasterize](https://gdal.org/programs/gdal_rasterize.html) (-tap, -ts, -tr, -te options)
+  - [gdal_polygonize](https://gdal.org/programs/gdal_polygonize.html)
+- other tools and resources of interest:
+  - [ESMPy](https://earthsystemcog.org/projects/esmpy/) : ESMF Python Regridding Interface
+  - [GEOS](https://trac.osgeo.org/geos) - Geometry Engine, Open Source - this is what gdal and a lot of other libraries (e.g. shapely) use in the background. Read documentation/source here for details on whats going on behind the scenes
+  - [Raster data model (gdal)](https://gdal.org/user/raster_data_model.html)
+  - [raster corner vs center coords figure](https://www.esri.com/about/newsroom/arcuser/understanding-raster-georeferencing/)
+- xarray-spatial's [zonal statistics function](https://makepath.github.io/xarray-spatial/zonal_statistics.html) worked well!
