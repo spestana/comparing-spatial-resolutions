@@ -44,3 +44,4 @@ Some shapefile-defined zonal stats notebooks I have:
   - [Raster data model (gdal)](https://gdal.org/user/raster_data_model.html)
   - [raster corner vs center coords figure](https://www.esri.com/about/newsroom/arcuser/understanding-raster-georeferencing/)
 - xarray-spatial's [zonal statistics function](https://makepath.github.io/xarray-spatial/zonal_statistics.html) worked well!
+  - **see my example notebook here:** [try-xarray-spatial.ipynb](https://github.com/spestana/comparing-spatial-resolutions/blob/master/try-xarray-spatial.ipynb), or on [nbviewer](https://nbviewer.jupyter.org/github/spestana/comparing-spatial-resolutions/blob/master/try-xarray-spatial.ipynb)
